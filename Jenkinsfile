@@ -1,5 +1,5 @@
 pipeline{
-agent any
+  agent any
   stages{
     stage("Build"){
       steps{
@@ -10,7 +10,8 @@ agent any
       echo "Hello from test"
       }
     }
-  }post{
+  }
+  post{
     always{
           echo "shutdown machine"
     }
